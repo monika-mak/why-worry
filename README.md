@@ -2,7 +2,17 @@
 Why Worry
 
 https://www.youtube.com/watch?v=ngLEhVU1Ezk
+----------------------------------------------------
 
+import tkinter as tk
+from tkinter import messagebox
+
+def show_message(problem_exists, can_solve):
+    why = "Then Why Worry?"
+    if not problem_exists or can_solve:
+        messagebox.showinfo("Message", why)
+    else:
+        messagebox.showinfo("Message", why)
 import tkinter as tk
 from tkinter import messagebox
 
@@ -31,6 +41,9 @@ def main():
     tk.Button(root, text="Start", command=ask_first_question).pack(pady=20)
     
     root.mainloop()
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
